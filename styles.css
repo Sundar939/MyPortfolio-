@@ -1,0 +1,287 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif; /* Custom font */
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;600&display=swap');
+
+/* Apply custom fonts */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+header .container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: slideIn 1s ease-out;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: #ffcc00; /* Highlight color */
+}
+
+header .title {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+    font-family: 'Roboto', sans-serif; /* Custom font */
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Highlight color */
+    transform: scale(1.1); /* Slight scale effect */
+}
+
+/* Section Styles */
+section {
+    padding: 2rem 0;
+    animation: fadeIn 1s ease-in;
+}
+
+section .container {
+    width: 80%;
+    margin: auto;
+}
+
+/* Header Styles with a Single Color */
+h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #3498db; /* Single color for all headers */
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    animation: fadeIn 1s ease-in;
+}
+
+/* Animation Keyframes */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Education Section */
+#education {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in;
+    border-left: 5px solid #ffcc00; /* Highlight color */
+    font-family: 'Open Sans', sans-serif; /* Custom font */
+}
+
+#education h3 {
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333; /* Text color */
+    animation: slideIn 1s ease-out; /* Animation */
+}
+
+#education ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#education ul li {
+    margin-bottom: 0.5rem;
+    color: #666; /* Text color */
+}
+
+/* Skills Section */
+#skills {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in;
+    border-left: 5px solid #ffcc00; /* Highlight color */
+    font-family: 'Open Sans', sans-serif; /* Custom font */
+}
+
+#skills h3 {
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333; /* Text color */
+    animation: slideIn 1s ease-out; /* Animation */
+}
+
+#skills ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+#skills ul li {
+    color: #666; /* Text color */
+}
+
+/* Contact Section */
+#contact a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+#contact a:hover {
+    color: #ffcc00; /* Highlight color */
+    text-decoration: underline;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+form {
+    margin-top: 1rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333; /* Text color */
+    font-family: 'Open Sans', sans-serif; /* Custom font */
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #333;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+form button {
+    padding: 0.5rem 1rem;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    animation: pulse 1.5s infinite; /* Pulsing effect */
+}
+
+form button:hover {
+    background: #555;
+    transform: scale(1.05); /* Slight scale effect */
+}
+/* Welcome Section Styles */
+#welcome {
+    background: #fff; /* Background color for the section */
+    padding: 2rem 0;
+    text-align: center; /* Center the text */
+}
+
+#welcome .container {
+    width: 80%;
+    margin: auto;
+}
+
+#welcome h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    color: #333; /* Text color */
+    margin-bottom: 0.5rem;
+}
+
+#welcome p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    color: #666; /* Text color */
+    margin: 0.5rem 0;
+}
+
+#welcome .subtitle {
+    font-weight: bold;
+    color: #3498db; /* Accent color for subtitle */
+}
+
+#welcome .skills {
+    font-style: italic;
+    color: #555; /* Slightly lighter color for skills */
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer .container {
+    width: 80%;
+    margin: auto;
+}
